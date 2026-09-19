@@ -5,19 +5,20 @@ not a research program with a schedule.
 
 ## Now
 
-- **Design V2 of agentic-review-swarm.** Broad systems reviewer, specialists preserved, arbiter,
-  explicit semantics for unowned findings, findings and assurance record as separate outputs. A new
-  ADR supersedes ADR 0004 and keeps it in place. Seeds for cross-cutting reasoning; tests for the
-  arbiter. Existing V1 checks and seeds must still pass, and any V1 behavior that changes is named as
-  intentional or as a regression.
-- **Tag V1.** The swarm commit Experiment 001 tested gets a tag and a release so the study can cite
-  a name instead of a hash.
+- **V2.0 is built and evaluated** (done 2026-09-19): systems reviewer, arbiter, unowned findings,
+  disagreements, coverage caps, two outputs, ADR 0006. Component runs and an integrated run are
+  preserved and graded in the swarm repository under `docs/evals/`. V1 is tagged
+  `v1-experiment-final`.
+- **Land the tool-execution fix on V2.** The fix branch Experiment 001's tools condition ran on was
+  never merged; V2 was cut from `main` without it. A merge, not new work.
+- **Repair the fixtures the reviewers found defects in** (five known) and make the seed runner's
+  term check tolerant of paraphrase and of non-ASCII on macOS. Earlier gradings stay as graded.
 - **Outside review of Experiment 001's verdicts.** Disputes become logged corrections.
 
 ## Next
 
 - **Use V2 on real development work** and collect its failures the way V1's were collected, in a
-  review log, before measuring it formally.
+  review log, before measuring it formally. V2 has reviewed zero real pull requests.
 - **First-principles review of the security charter**, documented separately from V2. The specialist
   lost its lane to two generalists and the reason is not known. Adding the missed findings to its
   checklist is not the plan.
@@ -30,6 +31,13 @@ not a research program with a schedule.
   read 001. Rubrics applied. Second judge. Cost recorded for every arm.
 - **Compare V1 and V2 formally only when there is enough reason to spend the compute.** V2 in field
   use with a review log may answer most of the question before an experiment is needed.
+
+## The question after V2
+
+Every reviewer still investigates once and returns a report; nothing inspects intermediate evidence
+and decides whether to continue. The next research question, not yet designed: does review quality
+improve when static reviewers become managed investigators, able to gather evidence iteratively,
+choose tools, revise hypotheses, and be directed to continue when their evidence is incomplete?
 
 ## Not planned
 

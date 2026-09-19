@@ -1,8 +1,13 @@
 # V2: hybrid review
 
-**Status: hypothesis. Not built, not measured. This document describes what V2 is expected to be
-and why, and lists what would have to be true for it to be worth keeping. Nothing here is a
-result.**
+**Status: written as a hypothesis before V2 was built, and kept as written. V2.0 has since been
+implemented on `v2/hierarchical-review-model` in the swarm repository and its components evaluated;
+the record of what was actually built and what the evaluations showed is
+[`docs/research/v2-hybrid-review.md`](https://github.com/cruzbuilds/agentic-review-swarm/blob/v2/hierarchical-review-model/docs/research/v2-hybrid-review.md)
+there. This page is the pre-implementation design and is not updated with results, so that the
+hypothesis can be compared with what happened. Two things here turned out differently: the arbiter
+was forbidden from opening any file at all (not "limited to cited lines"), and a not-installed
+reviewer caps the verdict at WARN rather than annotating it. Nothing here is a result.**
 
 ## The hypothesis
 

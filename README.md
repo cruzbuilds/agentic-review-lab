@@ -16,7 +16,7 @@ repositories, linked below, and nothing here duplicates them.
 
 | Repository | Role | State |
 | --- | --- | --- |
-| **[agentic-review-swarm](https://github.com/cruzbuilds/agentic-review-swarm)** | The reusable review system. Reviewer charters, adapters for Claude Code and Kiro, seeds, runner. | V1 tested. V2 in design. |
+| **[agentic-review-swarm](https://github.com/cruzbuilds/agentic-review-swarm)** | The reusable review system. Reviewer charters, adapters for Claude Code and Kiro, seeds, runner. | V1 tested and tagged. V2.0 implemented on a branch, component-evaluated, integration-verified, not compared with V1, not yet used on real work. |
 | **[Five-Critics-or-One-Good-Prompt](https://github.com/cruzbuilds/Five-Critics-or-One-Good-Prompt)** | Experiment 001. Protocol, sealed predictions, deviations, fifteen raw reports, adjudication, analysis. | Closed. Immutable record. |
 | [idea-log](https://github.com/cruzbuilds/idea-log) | The frozen subject Experiment 001 reviewed. One commit, never worked in. Public so every verdict can be checked. | Sealed. |
 | [shelflife](https://github.com/cruzbuilds/shelflife) | A real project the swarm has reviewed on every pull request. Its review log is the field record that motivated the experiment. | Active. |
@@ -26,7 +26,7 @@ repositories, linked below, and nothing here duplicates them.
 ```
 agentic-review-lab            program narrative, architecture history, findings summaries
     |
-    +-- agentic-review-swarm       the implementation (V1 tested, V2 in design)
+    +-- agentic-review-swarm       the implementation (V1 tested, V2.0 built and evaluated, unmeasured against V1)
     +-- Five-Critics-or-One-Good-Prompt   Experiment 001, the evidence
     |       +-- idea-log               the frozen subject
     +-- shelflife                  field use, the review log
@@ -119,9 +119,14 @@ assurance record.
 The rule that changes from V1: an important finding must never disappear because it does not fit a
 lane.
 
-**V2 is a hypothesis motivated by Experiment 001. It has not been built and it has not been
-experimentally validated.** Whether it recovers the cross-cutting findings V1 lost while keeping what
-V1 did well is the question for Experiment 002, which has not been designed past a paragraph.
+**V2.0 is built and its mechanisms are evaluated. It is not validated against V1.** On its own
+evaluations the systems reviewer reconstructed five of five planted interactions and found defects in
+three fixtures nobody planted, the arbiter applied its contract seventeen of seventeen times, and the
+integrated run showed no regressions in the V1 suite. Whether V2 recovers the cross-cutting findings
+V1 lost on a real subject, at what cost, is the question for Experiment 002, which has not been
+designed past a paragraph. The full record, including what is not demonstrated, is
+[`docs/research/v2-hybrid-review.md`](https://github.com/cruzbuilds/agentic-review-swarm/blob/v2/hierarchical-review-model/docs/research/v2-hybrid-review.md)
+in the swarm repository.
 
 [Architecture: V2 hypothesis](architecture/v2-hybrid-review.md) · [Roadmap](roadmap/README.md)
 
