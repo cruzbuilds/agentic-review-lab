@@ -8,9 +8,13 @@ front door for a set of repositories that work on that second problem with pract
 experiments: build a review architecture, test its assumptions on real code, keep the evidence,
 change the architecture when the evidence says to.
 
-This repository holds the program narrative, the architecture history, findings summaries, and links.
-It does not hold the review system's source or the experiments' raw data. Those live in their own
-repositories, linked below, and nothing here duplicates them.
+**Where the canonical record is.** As of 2026-09-19 the research record lives with the
+implementation, in [agentic-review-swarm](https://github.com/cruzbuilds/agentic-review-swarm) under
+`docs/research/`: the progression map, the Experiment 001 entry, the V2 record with its frozen
+evaluation runs, the proposed V3, and the paper. This repository is the cross-repository front door and
+the pre-implementation design history; where a page here and a page there say the same thing, the
+swarm repository's is canonical and this one links to it. Experiment 001's raw data stays in its own
+repository, as before.
 
 ## The repositories
 
